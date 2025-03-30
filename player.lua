@@ -55,7 +55,7 @@ function draw_player()
     local pencil_x = p.x - 10
     local pencil_y = p.y + 8
     spr_ol(32, 3, 1, pencil_x + scr_shake.x, pencil_y + scr_shake.y, false, false, false, 1) -- Draw pencil
-    pset(pencil_x + 2, pencil_y + 2, 1)
+    pset(pencil_x + 2 + scr_shake.x, pencil_y + 2 + scr_shake.y, 1)
 
     spr_ol(
         16 + (elapsed_time / 8) % 4, 
