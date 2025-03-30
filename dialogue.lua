@@ -71,7 +71,8 @@ end
 function handle_dialogue_ending()
     if dialogue_active_event == dialogue_events.TORUS_INTRO then
         t.state = t_states.BEGIN_FIGHT
-        sfx(23)
+        music(-1)
+        sfx(52)
     end
 end
 
